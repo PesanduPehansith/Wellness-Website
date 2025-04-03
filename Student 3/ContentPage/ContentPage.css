@@ -1,0 +1,106 @@
+*{
+    text-decoration: none;
+
+}
+.nav{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 0 25px;
+    background-color: #f7f9f8;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.10);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.nav .links a{
+    margin-right: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+.nav .links .mainlink{
+    color: chocolate;
+}
+.nav .links a:hover{
+    color: blue;
+}
+.nav .links .button{
+    padding: 8.5px 34px ;
+    margin-left: 65px;
+    display: inline-block;
+    padding: 10.5px 36px;
+    font-size: 14px;
+    color: black;
+    -o-transition: all.4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    text-transform: capitalize;
+    border: 1px solid #e4e6ea;
+    font-family: 'playfair display', serif;
+}
+.nav .links .button:hover{
+    color: blue;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin-top: 5%;
+    background-color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+h1{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: purple;
+    margin-top: 100px;
+}
+.column{
+    width: 20%;
+    height: 10%;
+    padding: 5px;
+}
+.Gallery{
+    display: flex;
+    justify-content: center;
+}
+.box{
+    background-image: linear-gradient(182deg, rgb(190, 90, 247),rgb(22, 91, 145));
+  padding: 10px;
+  border: 2px solid #e965e7;
+  border-radius: 5px;
+  width: fit-content;
+  margin: 20px;
+}
+.footer{
+    color: white;
+    background-color: #333;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    bottom: 10;
+}
+.footerlinks a{
+    color: white;
+    margin: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.footerlinks .mainlink{
+    color: #e0501b;
+}
+.footer a:hover{
+    color: #007bff;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="nav">
+            <div class="logo">
+                <img src="Images/logo.jpg" alt="Wellness">    
+            </div>
+            <div class="links">
+                <a href="../../Student 2/home.html" class="mainlinks" style="color: rgb(201, 99, 25);">Home</a>
+                <a href="../../Student 1/Shop.html"> Shop </a>
+                <a href="../../Student 2/feedback.html"> Feedback </a>
+                <a href="profile.html"> Quiz </a>
+                <a href="../Team/team.html"> About Us </a>
+                <a href="../../Student 4/site_map.html"> Site Map </a>
+                <a class="button" href="../../Student 4/gallery.html"> Gallery </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="start_btn"><button onclick="startQuiz()">Start Quiz</button></div>
+    
+    <div id="quizContainer">
+        <p id="step_info">STEP 1 Personal details | Question 1/4 </p>
+    <div class="hidden custom" id="custom-prompt">
+        <div id="prompttext">
+        </div>
+        <input id="promptinput" placeholder="Enter your text..." class="input" name="text" type="text">
+    </div>
+    </div>
+
+    <div id="buttonContainer">
+        <button id="skipButton" onclick="skipQuestion()">Skip</button>
+        <button id="nextButton" onclick="submitAnswer()">Next</button>
+    </div>
+    
+    <div id="progressContainer">
+        <progress id="progressBar" max="100" value="0"></progress>
+        <p id="progressText">0% Complete</p>
+    </div>
+
+    <div id="outputBox" style="display: none;">
+        <h2>User Output</h2>
+        <div id="outputContent"></div>
+    </div>
+
+    <script src="profile.js"></script>
+</body> 
+</html>
+
+
+
+

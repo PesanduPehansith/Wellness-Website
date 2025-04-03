@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Gallery </title>
+        <link rel="stylesheet" href="gallery.css">
+        <script src="gallery.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="nav">
+                <div class="logo">
+                    <img src="Gallery_Images/logo.jpg" alt="logo">    
+                </div>
+                <div class="links">
+                    <a href="../Student 2/home.html" class="mainlinks" style="color: rgb(201, 99, 25);">Home</a>
+                    <a href="../Student 1/Shop.html"> Shop </a>
+                    <a href="../Student 2/feedback.html"> Feedback </a>
+                    <a href="../Student 3/profile/profile.html"> Quiz </a>
+                    <a href="../Student 3/Team/team.html"> About Us </a>
+                    <a href="site_map.html"> Site Map </a>
+                    <a class="button" href="gallery.html"> Gallery </a>
+                </div>
+            </div>
+        </div>
+
+        <h1> Gallery </h1>
+        <div class="center1">
+            <img src="Gallery_Images/Healthy_Food.jpg" alt="Healthy Food" onclick="details('description1')">
+            <img src="Gallery_Images/Physical_Activity.jpg" alt="Physical activity" onclick="details('description2')">
+            <img src="Gallery_Images/Mindfulness_and_Relaxation.jpg" alt="Mindfulness and Relaxation" onclick="details('description3')">
+            <img src="Gallery_Images/Healthcare_and_Medical_Professionals.jpg" alt="Healthcare and Medical Professionals" onclick="details('description4')">
+            <img src="Gallery_Images/Healthy_Lifestyle_Choices.jpg" alt="Healthy Lifestyle Choices" onclick="details('description5')">
+        </div>
+
+        <div class="hide" id="description1">
+            <div class="view">
+                <button onclick="closeDetails()"> CLOSE </button>
+                <img src="Gallery_Images/Healthy_Food.jpg" alt="Healthy Food">
+                <h2> Healthy Food </h2>
+                <p> Eating nutritious foods can significantly impact your overall well-being, from enhancing mood and memory to preventing and managing health issues. A balanced diet, rich in essential nutrients, helps maintain a healthy weight and promotes optimal body function. To eat well, focus on consuming a variety of nutrient-dense foods, staying hydrated, and limiting processed and unhealthy snacks. </p>
+            </div>
+        </div>
+
+        <div class="hide" id="description2">
+            <div class="view">
+                <button onclick="closeDetails()"> CLOSE </button>
+                <img src="Gallery_Images/Physical_Activity.jpg" alt="Physical Activity">
+                <h2> Physical Activity </h2>
+                <p> Regular physical activity is crucial for maintaining optimal health and well-being. Despite the body's natural inclination toward movement, modern lifestyles often hinder consistent activity. In the United States, many adults fail to meet the recommended daily exercise levels needed to prevent chronic diseases, despite one in two adults living with such conditions. Engaging in regular physical activity offers profound benefits across all stages of life, irrespective of one's sex, race, ethnicity, or current fitness level. </p>
+            </div>
+        </div>
+
+        <div class="hide" id="description3">
+            <div class="view">
+                <button onclick="closeDetails()"> CLOSE </button>
+                <img src="Gallery_Images/Mindfulness_and_Relaxation.jpg" alt="Mindfulness and Relaxation">
+                <h2> Mindfulness and Relaxation </h2>
+                <p> Practicing mindfulness and relaxation involves tapping into our innate ability to be fully present and aware of our surroundings and actions, without being overly reactive or overwhelmed. While this capacity for mindfulness is inherent in all of us, it becomes more accessible with regular practice. Mindfulness is about consciously focusing on our sensory experiences or mental states in the present moment. Research indicates that consistent mindfulness practice can lead to physical changes in the brain, highlighting its potential to reshape our neural pathways. </p>
+            </div>
+        </div>
+
+        <div class="hide" id="description4">
+            <div class="view">
+                <button onclick="closeDetails()"> CLOSE </button>
+                <img src="Gallery_Images/Healthcare_and_Medical_Professionals.jpg" alt="Healthcare and Medical Professionals">
+                <h2> Healthcare and Medical Professionals </h2>
+                <p> According to the American Medical Association (AMA), healthcare professionals are individuals who possess the necessary education, training, and licensing to provide medical services. These professionals care for patients using evidence-based practice, a decision-making approach that integrates research findings and established theory. They are responsible for examining, diagnosing, treating, and preventing injuries, illnesses, and other health issues. Successful healthcare professionals exhibit qualities such as emotional stability, empathy, effective communication, attention to detail, problem-solving abilities, technical expertise, the ability to foster teamwork, and motivational skills. </p>
+            </div>
+        </div>
+
+        <div class="hide" id="description5">
+            <div class="view">
+                <button onclick="closeDetails()"> CLOSE </button>
+                <img src="Gallery_Images/Healthy_Lifestyle_Choices.jpg" alt="Healthy Lifestyle Choices">
+                <h2> Healthy Lifestyle Choices </h2>
+                <p> Encouraging healthy lifestyle choices is essential for promoting overall well-being. Simple habits, such as staying hydrated by drinking enough water, ensuring an adequate amount of sleep, and practicing good hygiene, play a crucial role in maintaining good health. These choices not only boost physical health but also contribute to mental and emotional well-being. Highlighting the significance of these habits can inspire people to prioritize their health and make positive changes in their daily routines. </p>
+            </div>
+        </div>
+        
+        <div class="customize">
+            <label for="changeBackgroundColor"> Background Colour: </label>
+            <input type="color" id="changeBackgroundColor"  value="#ffffff" onchange="backgroundColor()">
+            
+            <label for="changeFontFamily"> Font Family: </label>
+            <select id="changeFontFamily" onchange="fontFamily()">
+                <option value="Arial"> Arial </option>
+                <option value="Verdana"> Verdana </option>
+                <option value="Tahoma"> Tahoma </option>
+                <option value="Times New Roman" selected> Times New Roman </option>
+                <option value="Courier New"> Courier New </option>
+            </select>
+
+            <label for="changeFontSize"> Font Size: </label>
+            <select id="changeFontSize" onchange="fontSize()">
+                <option value="small"> Small </option>
+                <option value="medium" selected> Medium </option>
+                <option value="large"> Large </option>
+            </select>
+        </div>
+        <div class="footer">
+            <div class="footerlinks">
+                <a href="editors_page.html" class="editor"> Page Editor | Pesandu Pehansith </a>
+                <br>
+                <br>
+                <a href="../Student 2/home.html" class="mainlink">Home</a>
+                    <a href="../Student 1/Shop.html">Shop</a>
+                    <a href="../Student 2/feedback.html">Feedback</a>
+                    <a href="../Student 3/profile/profile.html">Quiz</a>
+                    <a href="../Student 3/Team/team.html">About us</a>
+                    <a href="site_map.html">Site Map</a>
+            </div>
+            <p> &copy; 2024 Wellness. All Rights Reserved. </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="splash.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Screen</title>
+    <script>"splash.js"</script>
+    <style>
+
+.footer{
+   color: white;
+   background-color: #333;
+   height: 100px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+   bottom: 0;
+   
+}
+.footerlinks a{
+   color: white;
+   margin: 20px;
+   font-size: 16px;
+   font-weight: 600;
+}
+.footerlinks .mainlink{
+   color: #e0501b;
+}
+.footer a:hover{
+   color: #007bff;
+}
+
+*{
+    text-decoration: none;
+
+}
+.nav{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 0 25px;
+    background-color: #f7f9f8;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.10);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.nav .links a{
+    margin-right: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+.nav .links .mainlink{
+    color: chocolate;
+}
+.nav .links a:hover{
+    color: blue;
+}
+.nav .links .button{
+    padding: 8.5px 34px ;
+    margin-left: 65px;
+    display: inline-block;
+    padding: 10.5px 36px;
+    font-size: 14px;
+    color: black;
+    -o-transition: all.4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    text-transform: capitalize;
+    border: 1px solid #e4e6ea;
+    font-family: 'playfair display', serif;
+}
+.nav .links .button:hover{
+    color:blue;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+
+.badge{
+    position: relative;
+    left: 50%;
+    top: 250px;
+    width: 200px;
+    height: 200px;
+}
+
+.Name{
+    position: relative;
+    display: inline-block;
+    top: 300px;
+    left: 150px;
+    bottom: -20px;
+    opacity: 10;
+    font-size: 3.5rem;
+    font-style: italic;
+    color: rgba(0, 4, 131, 0.77);
+
+}
+
+.OM{
+    position: relative;
+    left: -200px;
+    top: 300px;
+    color: rgb(47, 47, 47);
+}
+.OMP{
+    position: relative;
+    left: -200px;
+    top: 330px;
+    color: rgba(47, 47, 47, 0.795);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+.OT{
+    position: relative;
+    left: -200px;
+    top: 370px;
+    color: rgb(47, 47, 47);
+
+}
+
+.TeamM{
+    position: relative;
+    left: -200px;
+    top: 400px;
+    color: rgba(47, 47, 47, 0.795);
+    font-family: cursive;
+    font-style: italic;
+    font-size: 1.8rem;
+    
+}
+
+.bgi{
+    width: 1920px;
+    height: 776px;
+
+}
+
+
+.intro{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    transition: 4s;
+
+}
+
+.logo-header{
+    position: absolute;
+    top: 10%;
+    left: 47%;
+    transform: translate(-50%,-50%);
+    
+
+}
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="logo">
+                <img src="Gallery Images/logo.jpg">    
+            </div>
+            <div class="links">
+                <a href="../Student 2/home.html" class="mainlinks" style="color: rgb(201, 99, 25);">Home</a>
+                <a href="../Student 1/Shop.html"> Shop </a>
+                <a href="../Student 2/feedback.html"> Feedback </a>
+                <a href="../Student 3/profile/profile.html"> Quiz </a>
+                <a href="../Student 3/Team/team.html"> About Us </a>
+                <a href="../Student 4/site_map.html"> Site Map </a>
+                <a class="button" href="../Student 4/gallery.html"> Gallery </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class ="intro">
+
+        <h1 class= "logo-header">
+            <span><img class= "badge" src="wellness logo.png" ></span>
+            <span class="Name">WELLNESS.</span>
+            <p class="OM"><i>Our Mission</i><p>
+            <p class="OMP"><i>To provide accessible, reliable, and personalized healthcare information and services to empower individuals to take control of their health and <br>well being.</i></p>
+            <p class="OT"><i>Our Team</i></p>
+            <ul class="TeamM">
+                <li>Sandul Gunawardana</li>
+                <li>Menura Kumara</li>
+                <li>Pesandu Abeynayaka</li>
+                <li>Pasindu Karunarathna</li>
+            </ul>
+        </h1>
+            <span><img class= "bgi" src="medical-15.jpg"></span>
+
+    </div>
+    
+    <script>
+        
+        let intro = document.querySelector('.intro');
+        let logo = document.querySelector('.logo-header');
+        let logoSpan = document.querySelectorAll('.logo');
+    
+        window.addEventListener('DOMContentLoaded', () => {
+
+      
+                setTimeout(() => {
+                    intro.style.top = '-100vh';
+                },4000)
+            })
+        
+    </script>
+
+<footer>
+    <div< class="footer">
+        <div class="footerlinks">
+            <br>
+            <a href="../Student 2/home.html" class="mainlink">Home</a>
+                <a href="../Student 1/Shop.html">Shop</a>
+                <a href="../Student 2/feedback.html">Feedback</a>
+                <a href="../Student 3/profile/profile.html">Quiz</a>
+                <a href="../Student 3/Team/team.html">About us</a>
+                <a href="../Student 4/site_map.html">Site Map</a>
+        </div>
+    </div>
+    <p> &copy; 2024 Wellness. All Rights Reserved. </p>
+</footer>
+</body>
+</html>
